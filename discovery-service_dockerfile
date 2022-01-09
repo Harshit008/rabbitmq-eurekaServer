@@ -1,4 +1,4 @@
-FROM jdk-1_8_201:base
+FROM openjdk:8
 ADD target/macys-discovery-service-1-0.0.1-SNAPSHOT.jar /macys-discovery-service-1-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["usr/bin/java"]
 CMD ["-jar", "/macys-discovery-service-1-0.0.1-SNAPSHOT.jar"]
