@@ -1,5 +1,4 @@
 FROM openjdk:8
-ADD /usr/local/microservices/macys-eurekaserver-service/macys-discovery-service-1-0.0.1-SNAPSHOT.jar /macys-discovery-service.jar
 ENTRYPOINT ["usr/bin/java"]
-CMD ["-jar", "/macys-discovery-service.jar"]
+CMD ["-jar", "/usr/local/microservices/macys-eurekaserver-service/macys-discovery-service-1-0.0.1-SNAPSHOT.jar"]
 EXPOSE 8761
