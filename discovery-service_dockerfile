@@ -1,4 +1,4 @@
 FROM openjdk:8
-WORKDIR /usr/local/microservices/macys-eurekaserver-service/
+ADD target/macys-order-service.jar /macys-order-service.jar
 CMD ["java","-jar", "macys-discovery-service-1-0.0.1-SNAPSHOT.jar"]
-EXPOSE 87
+EXPOSE 8761
